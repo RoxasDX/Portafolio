@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="STYLESHEET" type="text/css" href="style6.css">
+        <title>Yahir Isai Sanchez Patron</title>
+    </head>
+<body>
+    <form action="#" method="post">
+        <p id="Formato1">Nombre: <input type=text name="nombre" autofocus0>
+            <br><br>
+        Apellidos: <input type=text name="ape" maxlenght="2" placeholder="Escribe los dos apellidos"><br><br>
+        Edad: <input type=text name="localidad" size="18" minlength="2" maxlenght="2"><br><br>
+        <input type=submit value="Enviar"><br></p>
+    </form><br><br>
+
+    <form id="Formato1" method="post"> <p>Selecciona una Carrera:<input list="lista">
+        <datalist id="lista" >
+        <option value="Ingenieria Informatica" >
+        <option value="Ingenieria en Sistemas Computacionales" >
+        <option value="Ingenieria en TICS" >
+        </datalist><br><br>
+    
+    <p id="Formato1">
+        Selecciona una Carrera:
+        <select name="carrera">
+            <option value="II"> Ingenieria Informatica</option>
+            <option value="ISC" selected="selected"> Ingenieria en Sistemas Computacionales </option>
+            <option value="TICS"> Ingenieria en TIC</option>
+        </select>
+    </p>
+    
+    <p id="Formato1"><input type="checkbox" value="acepta" name="condiciones" checked="checked"> Acepto Inscribirme a la Carrera<br><br>
+        Genero: Hombre<input type="radio" name="genero" value="h"> Mujer<input type="radio" name="genero" value="m"><br><br>
+        Semestre: <input type="number" name="numero" step="2" min="1" max="11" placeholder="1-11"><br><br>
+        Fecha de hoy: <input type="date" name="fecha"><br><br>
+        Registro de Hora: <input type="time" name="horainicio"><br><br>
+        Que color te gusta? <input type="color" name="color"><br><br>
+        Adjunta tu documento: <input type="file" name="fichero" accept=".doc, .docx, .pdf" ><br><br>
+        Escribe tu opinion: <textarea name="area" cols="40" rows="4" minlength="5" maxlength="200">Escribe tu opinion</textarea></p>
+    </form>
+</body>
+</html>
