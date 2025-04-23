@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title> Sanchez Patron Yahir Isai</title>
+    </head>
+    <body>
+        <table border="0" align="Center">
+            <tr>
+                <td><img src=Logo-TECNM.png width="300" ></td>
+                <td><font face="Helvetica, Arial Black" Size=5 color=#2E2EFE>
+                    <P align="Center">
+                        INSTITUTO TECNOLOGICO DE TIJUANA <br>
+                        UNIDAD TOMAS AQUINO<br><br>
+                    </P> </font></td>
+                    <td><img src=Logo-ITT.jpg width="150"</td>
+            </tr>
+        </table>
+
+        <table border=3 bordercolor="Aqua" align="Center" Width="100%">
+            <tr>
+                <td><font face="Comic Sans" Size=3 Color=#2E2EFE>
+                <b>Carrera: </b>Ingenieria en Sistemas Computacionales  
+                </font></td>
+                <td><font face="Comic Sans" Size=3 Color=#2E2EFE>
+                <b>Materia: </b>Programacion Web </font></td>
+            </tr>
+            <tr>
+                <td><font face="Comic Sans" Size=3 Color=#2E2EFE>
+                <b>Horario: </b>19-20 </font></td>
+                <td><font face="Comic Sans" Size=3 Color=#2E2EFE>
+                <b>Salon/Laboratorio: </b>91L2/91L5</font></td>
+            </tr>
+            <tr>
+                <td><font face="Comic Sans" Size=3 Color=#2E2EFE>
+                <b>Alumno: </b>Sanchez Patron Yahir Isai </font></td>
+                <td><font face="Comic Sans" Size=3 Color=#2E2EFE>
+                <b>Docente: </b>Jos&eacute; Jonathan P&eacute;rez Castro</font></td>
+            </tr>
+            <tr>
+                <td><font face="Comic Sans" Size=3 Color=#2E2EFE>
+                <b>Actividad: </b>Práctica Complementaria 4 </font></td>
+                <td><font face="Comic Sans" Size=3 Color=#2E2EFE>
+                <b>Fecha Elaboración: </b>01 de noviembre de 2023</font></td>
+            </tr>
+        </table><br><br>
+        <font face="Tahoma" Size="5" Color="DeepSkyBlue"><p align="center">
+        Programa para calcular el área de alguna figura plana </p><br>
+        <form name="formulario">
+            Selecciona la Figura: <select id="figurasplanas">
+                <option value="default">--Selecciona una Opción--</option>
+                <option value="AreaTriangulo">Area del Triangulo</option>
+                <option value="AreaCuadrado">Area del Cuadrado</option>
+                <option value="AreaCirculo">Area del Circulo</option>
+            </select>
+
+            <input type="button" onclick="Ejecutar()" value="Ejecutar Operacion"><br>
+            El resultado <label id="lblresultado"> </label><br>
+            El resultado del area de la figura seleccionada es: <input type="text" id="txtarea">
+        </form>
+        </font>
+        <script language = "javascript">
+            function Ejecutar()
+            {
+                //Guardamos la opcion seleccionada por el usuario en una variable
+                var options=document.getElementById("figurasplanas").value;
+
+                //Iniciamos la estructura Switch
+                switch(options)
+                {
+                    case "AreaTriangulo":
+                        {
+                            //Variables locales
+                            var base, altura, area;
+
+                            //Usamos prompt para solicitar los datos
+                            base=prompt("Ingresa la base del triangulo: ",0);
+                            altura=prompt("Ingresa la altura del triangulo: ",0);
+
+                            //Proceso
+                            area=parseFloat(base)*parseFloat(altura)/2;
+
+                            //Mostramos el resultado en una etiqueta
+                            document.getElementById("lblresultado").innerHTML= " del area del Triangulo es: " + area;
+                            document.getElementById("txtarea").value= area;
+                        }break;
+                    case "AreaCuadrado":
+                        {
+                            //Variables locales
+                            var lado, area;
+
+                            //Usamos prompt para solicitar datos
+                            lado=prompt("Ingresa la medida de un lado del cuadrado: ",0);
+
+                            //Proceso
+                            area=parseFloat(lado)*parseFloat(lado);
+
+                            //Mostramos el resultado en una etiqueta
+                            document.getElementById("lblresultado").innerHTML=" del area del cuadrado es: "+ area;
+                            document.getElementById("txtarea").value= area;
+                        }break;
+                    case "AreaCirculo":
+                        {
+                            //Variables locales
+                            var radio, area;
+
+                            //Prompt para solicitar datos
+                            radio=prompt("Ingresa la medida del radio del circulo: ",0);
+
+                            //Proceso
+                            area=parseFloat(radio)*parseFloat(radio)*3.1416;
+
+                            //Mostramos el resultado en una etiqueta
+                            document.getElementById("lblresultado").innerHTML=" del area del circulo es: "+ area;
+                            document.getElementById("txtarea").value = area;
+                        }break;
+                    default:
+                        {
+                            window.alert("Selecciona una opción");
+                        }break;
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<html>
+    <head>
+    <title> Sanchez Patron Yahir Isai</title>
+    </head>
+    <body>
+        <table border="0" align="Center">
+            <tr>
+                <td><img src=Logo-TECNM.png width="300" ></td>
+                <td><font face="Helvetica, Arial Black" Size=5 color=#2E2EFE>
+                    <P align="Center">
+                        INSTITUTO TECNOLOGICO DE TIJUANA <br>
+                        UNIDAD TOMAS AQUINO<br><br>
+                    </P> </font></td>
+                    <td><img src=Logo-ITT.jpg width="150"</td>
+            </tr>
+        </table>
+
+        <table border=3 bordercolor="Aqua" align="Center" Width="100%">
+            <tr>
+                <td><font face="Comic Sans" Size=3 Color=#2E2EFE>
+                <b>Carrera: </b>Ingenieria en Sistemas Computacionales  
+                </font></td>
+                <td><font face="Comic Sans" Size=3 Color=#2E2EFE>
+                <b>Materia: </b>Programacion Web </font></td>
+            </tr>
+            <tr>
+                <td><font face="Comic Sans" Size=3 Color=#2E2EFE>
+                <b>Horario: </b>19-20 </font></td>
+                <td><font face="Comic Sans" Size=3 Color=#2E2EFE>
+                <b>Salon/Laboratorio: </b>91L2/91L5</font></td>
+            </tr>
+            <tr>
+                <td><font face="Comic Sans" Size=3 Color=#2E2EFE>
+                <b>Alumno: </b>Sanchez Patron Yahir Isai </font></td>
+                <td><font face="Comic Sans" Size=3 Color=#2E2EFE>
+                <b>Docente: </b>Jos&eacute; Jonathan P&eacute;rez Castro</font></td>
+            </tr>
+            <tr>
+                <td><font face="Comic Sans" Size=3 Color=#2E2EFE>
+                <b>Actividad: </b>Práctica Complementaria 3 </font></td>
+                <td><font face="Comic Sans" Size=3 Color=#2E2EFE>
+                <b>Fecha Elaboración: </b>30 de octubre de 2023</font></td>
+            </tr>
+        </table><br><br>
+
+        <form name="formulario"> <font face="Arial" size="5" color="DeepSkyBlue">
+            Introduce una edad: <input type="text" id="edadx"><br><br>
+
+            <input type="button" onclick="Functionedad()" value="Ejecutar"><br><br>
+            La Edad Introducida es de una persona: <input type="text" id="txtredad"><br><br>
+            La Edad Introducida es de una persona: <label id="lblredad"> Resultado </label><br><br>
+
+            <input type="button" onclick="Functionclear()" value="Nueva Comparacion">
+        </form></font>
+        <script language="javascript">
+            function Functionedad()
+            {
+                //Instruccion para mandar mensaje de alerta
+                window.alert("Proceso Terminado");
+
+                //Declaracion de Variables
+                var edad, edadc, mayor="Persona Mayor de Edad", menor="Persona Menor de edad";
+
+                //Asignacion de valores a las variables
+                edad = document.getElementById("edadx").value;
+
+                //Convertimos la edad a dato numero para ser comparado
+                edadc = parseInt(edad);
+
+                //Comparacion e impresion de datos
+                if (edadc >= 18)
+                {
+                    document.getElementById("txtredad").value = mayor;
+                    document.getElementById("lblredad").innerHTML = mayor;
+
+                }
+                else
+                {
+                    document.getElementById("txtredad").value = menor;
+                    document.getElementById("lblredad").innerHTML = menor;
+                }
+            }
+            function Functionclear()
+            {
+                //Instruccion para mandar mensaje de alerta con dos botones de opcion
+                window.confirm ("Proceso Terminado");
+
+                //Asignamos a cada texto solo espacio
+                document.getElementById("edadx").value = "";
+                document.getElementById("txtredad").value = "";
+                var text = "Resultado";
+                document.getElementById("lblredad").innerHTML = text;
+            }
+        </script>
+    </body>
+</html>
