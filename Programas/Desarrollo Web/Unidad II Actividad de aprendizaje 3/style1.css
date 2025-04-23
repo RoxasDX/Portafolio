@@ -1,0 +1,132 @@
+/*Comentarios en Css e instrucciones basicas*/
+#blue
+{
+    font-size:12pt ;
+    font-family: Arial;
+    font-weight: italic;
+    color:blue;
+    text-align: justify;
+}
+
+#fuchsia
+{
+    font-size:12pt ;
+    font-family: Arial;
+    font-style: italic;
+    color:fuchsia;
+    text-align: center;
+}
+
+#red
+{
+    font-size:12pt ;
+    font-family: Arial;
+    font-style: italic;
+    color:red;
+    text-align: left;
+}
+
+#yellow
+{
+    font-size:12pt ;
+    font-family: Arial;
+    font-style: italic;
+    color:yellow;
+    text-align: right;
+}
+#lime
+{
+    font-size:12pt ;
+    font-family: Arial;
+    font-style: italic ;
+    color:lime;
+    text-align: left;
+}
+#aqua
+{
+    font-size:12pt ;
+    font-family: Arial;
+    font-style: italic;
+    color:aqua;
+    text-align: justify;
+}
+#black
+{
+    font-size:12pt ;
+    font-family: Arial;
+    font-style: italic ;
+    color:black;
+    text-align: center;
+}
+#white
+{
+    font-size:12pt ;
+    font-family: Arial;
+    font-style: italic ;
+    color:white;
+    text-align: right;
+}
+#navy
+{
+    font-size:12pt ;
+    font-family: Arial;
+    font-style: italic;
+    color:navy;
+    text-align: left;
+}
+#purple
+{
+    font-size:12pt ;
+    font-family: Arial;
+    font-style: italic ;
+    color:purple;
+    text-align: center;
+}
+#maroon
+{
+    font-size:12pt ;
+    font-family: Arial;
+    font-style: italic ;
+    color:maroon;
+    text-align: justify;
+}
+#olive
+{
+    font-size:12pt ;
+    font-family: Arial;
+    font-style: italic ;
+    color:olive;
+    text-align: right;
+}
+#green
+{
+    font-size:12pt ;
+    font-family: Arial;
+    font-style: italic ;
+    color:green;
+    text-align: center;
+}
+#teal
+{
+    font-size:12pt ;
+    font-family: Arial;
+    font-style: italic ;
+    color:teal;
+    text-align: right;
+}
+#gray
+{
+    font-size:12pt ;
+    font-family: Arial;
+    font-style: italic;
+    color:gray;
+    text-align: left;
+}
+#silver
+{
+    font-size:12pt ;
+    font-family: Arial;
+    font-style: italic ;
+    color:silver;
+    text-align: justify;
+}
